@@ -1,0 +1,107 @@
+[*]
+[*] GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
+[*] Wed Dec 18 14:22:33 2024
+[*]
+[dumpfile] "/home/jen/projects/ProteusCore/proteus-private-encryption/sim.vcd"
+[dumpfile_mtime] "Wed Dec 18 13:36:02 2024"
+[dumpfile_size] 8273508
+[savefile] "/home/jen/projects/ProteusCore/proteus-private-encryption/src/main/scala/riscv/plugins/cheriEncrypt/tests/benchmark/benchmarksignals_CInvokeLatency.gtkw"
+[timestart] 3612
+[size] 1853 920
+[pos] -51 -51
+*-10.000000 7065 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] TOP.
+[treeopen] TOP.Core.
+[treeopen] TOP.Core.pipeline.
+[treeopen] TOP.Core.pipeline.AESTopWrapper.
+[treeopen] TOP.Core.pipeline.DataCacheEncrypt.
+[treeopen] TOP.Core.pipeline.DataCacheEncrypt.cacheControl.
+[treeopen] TOP.Core.pipeline.DataCacheEncrypt.cacheControl.readBatch.
+[treeopen] TOP.Core.pipeline.DataCacheEncrypt.cacheControl.writeBatch.
+[treeopen] TOP.Core.pipeline.fetch.
+[treeopen] TOP.Core.pipeline.InstructionCacheEncrypt.
+[treeopen] TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.
+[treeopen] TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.
+[treeopen] TOP.Core.pipeline.KeyGenWrapper2.
+[treeopen] TOP.Core.pipeline.KeyGenWrapper2.tableKeyGenTop_1.
+[treeopen] TOP.Core.pipeline.MemoryEncrypt2.
+[sst_width] 403
+[signals_width] 462
+[sst_expanded] 1
+[sst_vpaned_height] 409
+@28
+TOP.clk
+@200
+-Fetch
+@22
+TOP.Core.pipeline.fetch.FetcherEncrypt_fetchPCC_base[31:0]
+TOP.Core.pipeline.fetch.FetcherEncrypt_fetchPCC_length[31:0]
+TOP.Core.pipeline.fetch.FetcherEncrypt_fetchPCC_offset[31:0]
+@28
+TOP.Core.pipeline.memory.arbitration_jumpRequested
+@200
+-execute
+@22
+[color] 1
+TOP.Core.pipeline.execute.in_PC[31:0]
+@28
+[color] 2
+TOP.Core.pipeline.execute.in_CSEAL_ENCRYPT
+[color] 1
+TOP.Core.pipeline.execute.in_CINVOKE_ENCRYPT
+TOP.Core.pipeline.memory_arbitration_jumpRequested
+TOP.Core.pipeline.memory_arbitration_isReady
+[color] 1
+TOP.Core.pipeline.execute.in_CJALR
+@200
+-CInvokeEncrypt
+@28
+[color] 1
+TOP.Core.pipeline.memory.in_CINVOKE_ENCRYPT
+@820
+TOP.Core.pipeline.memory.CInvokeEncrypt_CInvokeEncryptFsm_stateReg_string[87:0]
+@200
+-InstructionCache
+@28
+[color] 2
+TOP.Core.pipeline.InstructionCacheEncrypt.ibusCache_cmdSelect
+[color] 2
+TOP.Core.pipeline.InstructionCacheEncrypt.ibusCache_rspSelect
+[color] 5
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.otherCache_thisCacheNotFinished
+[color] 5
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.otherCache_otherCacheNotFinished
+@820
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.cacheEnclaveFsm_stateReg_string[183:0]
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.AESFsm_stateReg_string[183:0]
+@200
+-readBatch
+@820
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.readCmdsMemFsm_stateReg_string[95:0]
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.readRspMemFsm_stateReg_string[103:0]
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.writeCacheFsm_stateReg_string[143:0]
+@200
+-DataCache
+@28
+[color] 2
+TOP.Core.pipeline.DataCacheEncrypt.dbusCache_cmdSelect
+[color] 2
+TOP.Core.pipeline.DataCacheEncrypt.dbusCache_rspSelect
+[color] 5
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.otherCache_thisCacheNotFinished
+@820
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.cacheEnclaveFsm_stateReg_string[183:0]
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.AESFsm_stateReg_string[183:0]
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.readBatch.readCmdsMemFsm_stateReg_string[95:0]
+@200
+-readBatch
+@820
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.readBatch.readRspMemFsm_stateReg_string[103:0]
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.readBatch.writeCacheFsm_stateReg_string[143:0]
+@200
+-writeBatch
+@820
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.writeBatch.readCacheFsm_stateReg_string[111:0]
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.writeBatch.writeMemFsm_stateReg_string[111:0]
+[pattern_trace] 1
+[pattern_trace] 0

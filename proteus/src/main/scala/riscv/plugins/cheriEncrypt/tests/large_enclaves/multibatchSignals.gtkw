@@ -1,0 +1,164 @@
+[*]
+[*] GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
+[*] Fri Jan  3 10:51:53 2025
+[*]
+[dumpfile] "/home/jen/projects/ProteusCore/proteus-private-encryption/sim.vcd"
+[dumpfile_mtime] "Fri Jan  3 10:34:21 2025"
+[dumpfile_size] 3797705498
+[savefile] "/home/jen/projects/ProteusCore/proteus-private-encryption/src/main/scala/riscv/plugins/cheriEncrypt/tests/large_enclaves/multibatchSignals.gtkw"
+[timestart] 0
+[size] 1671 600
+[pos] 64 208
+*-22.000000 825 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] TOP.
+[treeopen] TOP.Core.
+[treeopen] TOP.Core.pipeline.
+[treeopen] TOP.Core.pipeline.AESTopWrapper.
+[treeopen] TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.
+[treeopen] TOP.Core.pipeline.CSealEReadWrite.
+[treeopen] TOP.Core.pipeline.DataCacheEncrypt.
+[treeopen] TOP.Core.pipeline.DataCacheEncrypt.cacheControl.
+[treeopen] TOP.Core.pipeline.DataCacheEncrypt.cacheControl.readBatch.
+[treeopen] TOP.Core.pipeline.DataCacheEncrypt.cacheControl.writeBatch.
+[treeopen] TOP.Core.pipeline.InstructionCacheEncrypt.
+[treeopen] TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.
+[treeopen] TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.
+[treeopen] TOP.Core.pipeline.KeyGenWrapper2.
+[treeopen] TOP.Core.pipeline.KeyGenWrapper2.tableKeyGenTop_1.
+[treeopen] TOP.Core.pipeline.MemoryEncrypt2.
+[sst_width] 411
+[signals_width] 470
+[sst_expanded] 1
+[sst_vpaned_height] 174
+@28
+TOP.clk
+@200
+-software GET_CLK_CYCLES
+@24
+TOP.Core.pipeline.RegisterFileAccessor.x22_s6[31:0]
+@200
+-execute
+@22
+TOP.Core.pipeline.RegisterFileAccessor.x6_t1[31:0]
+TOP.Core.pipeline.RegisterFileAccessor.x7_t2[31:0]
+[color] 1
+TOP.Core.pipeline.execute.in_PC[31:0]
+@28
+[color] 2
+TOP.Core.pipeline.execute.in_CSEAL_ENCRYPT
+[color] 1
+TOP.Core.pipeline.execute.in_CINVOKE_ENCRYPT
+TOP.Core.pipeline.memory_arbitration_jumpRequested
+TOP.Core.pipeline.memory_arbitration_isReady
+[color] 1
+TOP.Core.pipeline.execute.in_CJALR
+@820
+TOP.Core.pipeline.memory.CSealEncrypt_CSealEncryptFsm_stateReg_string[87:0]
+@28
+TOP.Core.pipeline.memory.CSealEReadWrite_io_rsp_payload_done
+TOP.Core.pipeline.memory.CSealEReadWrite_io_rsp_valid
+@22
+TOP.Core.pipeline.memory.CSealEncrypt_tagAddrReg[31:0]
+TOP.Core.pipeline.memory.CSealEncrypt_dataAddrReg[31:0]
+@200
+-CSealEncrypt
+@28
+[color] 1
+TOP.Core.pipeline.memory.in_CSEAL_ENCRYPT
+[color] 2
+TOP.Core.pipeline.CSealEReadWrite.CSealInstr_cmd_payload_start
+[color] 2
+TOP.Core.pipeline.CSealEReadWrite.CSealInstr_cmd_valid
+@820
+TOP.Core.pipeline.memory.CSealEncrypt_CSealEncryptFsm_stateReg_string[87:0]
+TOP.Core.pipeline.KeyGenWrapper2.tableKeyGenTop_1.table_1.tableFsm_stateReg_string[135:0]
+@200
+-AES_ENC
+@820
+TOP.Core.pipeline.AESTopWrapper.AES_ENC_d.sm_stateReg_string[127:0]
+@28
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_ENC_d.io_cmd_valid
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_ENC_d.io_rsp_valid
+[color] 3
+TOP.Core.pipeline.AESTopWrapper.AES_ENC_d.io_cmd_payload_aad_vld
+@22
+[color] 3
+TOP.Core.pipeline.AESTopWrapper.AES_ENC_d.io_cmd_payload_block[127:0]
+[color] 3
+TOP.Core.pipeline.AESTopWrapper.AES_ENC_d.io_cmd_payload_key[127:0]
+@28
+[color] 3
+TOP.Core.pipeline.AESTopWrapper.AES_ENC_d.io_cmd_payload_key_vld
+[color] 3
+TOP.Core.pipeline.AESTopWrapper.AES_ENC_d.io_cmd_payload_last_word
+[color] 3
+TOP.Core.pipeline.AESTopWrapper.AES_ENC_d.io_cmd_payload_pt_vld
+[color] 3
+TOP.Core.pipeline.AESTopWrapper.AES_ENC_d.io_cmd_payload_vector_vld
+[color] 3
+TOP.Core.pipeline.AESTopWrapper.AES_ENC_d.io_cmd_ready
+@22
+[color] 3
+TOP.Core.pipeline.AESTopWrapper.AES_ENC_d.io_data_size[3:0]
+[color] 3
+TOP.Core.pipeline.AESTopWrapper.AES_ENC_d.io_rsp_payload_Out_data[127:0]
+@28
+[color] 3
+TOP.Core.pipeline.AESTopWrapper.AES_ENC_d.io_rsp_payload_data_vld
+[color] 3
+TOP.Core.pipeline.AESTopWrapper.AES_ENC_d.io_rsp_payload_tag_vld
+@200
+-KeyGenerator
+@820
+TOP.Core.pipeline.KeyGenWrapper2.tableKeyGenTop_1.keyGenerator.sm_stateReg_string[119:0]
+@28
+TOP.Core.pipeline.KeyGenWrapper2.io_KeyCSeal_cmd_valid
+TOP.Core.pipeline.KeyGenWrapper2.io_KeyCSeal_cmd_payload_genKey
+@22
+TOP.Core.pipeline.KeyGenWrapper2.io_KeyCSeal_rsp_payload_NextIVCount[63:0]
+TOP.Core.pipeline.KeyGenWrapper2.io_KeyCSeal_rsp_payload_key[127:0]
+@28
+TOP.Core.pipeline.KeyGenWrapper2.io_KeyCSeal_rsp_valid
+TOP.Core.pipeline.KeyGenWrapper2.io_KeyCSeal_cmd_payload_storeNextIVCount
+@22
+TOP.Core.pipeline.KeyGenWrapper2.io_KeyCSeal_cmd_payload_NewNextIVCount[63:0]
+@28
+TOP.Core.pipeline.KeyGenWrapper2.io_KeyCSeal_IVcountsavedDone
+@200
+-CSealReadWrite
+@820
+[color] 2
+TOP.Core.pipeline.CSealEReadWrite.readMuxfsm_stateReg_string[55:0]
+[color] 2
+TOP.Core.pipeline.CSealEReadWrite.readWritefsm_stateReg_string[71:0]
+@200
+-Instruction Cache
+@820
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.AESFsm_stateReg_string[183:0]
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.cacheEnclaveFsm_stateReg_string[183:0]
+@200
+-readcacheline
+@820
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.readCmdsMemFsm_stateReg_string[95:0]
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.readRspMemFsm_stateReg_string[103:0]
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.writeCacheFsm_stateReg_string[143:0]
+@200
+-Data Cache
+@820
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.cacheEnclaveFsm_stateReg_string[183:0]
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.AESFsm_stateReg_string[183:0]
+@200
+-readcacheline
+@820
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.readBatch.readCmdsMemFsm_stateReg_string[95:0]
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.readBatch.readRspMemFsm_stateReg_string[103:0]
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.readBatch.writeCacheFsm_stateReg_string[143:0]
+@200
+-writecacheline
+@820
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.writeBatch.readCacheFsm_stateReg_string[111:0]
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.writeBatch.writeMemFsm_stateReg_string[111:0]
+[pattern_trace] 1
+[pattern_trace] 0

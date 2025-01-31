@@ -1,0 +1,970 @@
+[*]
+[*] GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
+[*] Wed Nov 20 12:15:56 2024
+[*]
+[dumpfile] "/home/jen/projects/ProteusCore/proteus-private-encryption/sim.vcd"
+[dumpfile_mtime] "Wed Nov 20 11:57:38 2024"
+[dumpfile_size] 1813678
+[savefile] "/home/jen/projects/ProteusCore/proteus-private-encryption/signals/sealAndnvoke/Xexception.gtkw"
+[timestart] 0
+[size] 1853 920
+[pos] -51 -51
+*-11.000000 2425 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] TOP.
+[treeopen] TOP.Core.
+[treeopen] TOP.Core.pipeline.
+[treeopen] TOP.Core.pipeline.AESTopWrapper.
+[treeopen] TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.
+[treeopen] TOP.Core.pipeline.CSealEReadWrite.
+[treeopen] TOP.Core.pipeline.DataCacheEncrypt.
+[treeopen] TOP.Core.pipeline.DataCacheEncrypt.cacheControl.
+[treeopen] TOP.Core.pipeline.DataCacheEncrypt.cacheControl.readBatch.
+[treeopen] TOP.Core.pipeline.DataCacheEncrypt.cacheControl.writeBatch.
+[treeopen] TOP.Core.pipeline.InstructionCacheEncrypt.
+[treeopen] TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.
+[treeopen] TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.
+[treeopen] TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.writeBatch.
+[treeopen] TOP.Core.pipeline.KeyGenWrapper2.
+[treeopen] TOP.Core.pipeline.KeyGenWrapper2.tableKeyGenTop_1.
+[treeopen] TOP.Core.pipeline.MemoryEncrypt2.
+[sst_width] 383
+[signals_width] 470
+[sst_expanded] 1
+[sst_vpaned_height] 299
+@28
+TOP.clk
+[color] 2
+TOP.Core.pipeline.execute.in_CSEAL_ENCRYPT
+@200
+-Trap - exception
+@28
+[color] 2
+TOP.Core.pipeline.memory.TrapHandler_exceptionSignals_hasTrapped
+[color] 2
+TOP.Core.pipeline.memory.TrapHandler_exceptionSignals_trapCause[3:0]
+@22
+[color] 2
+TOP.Core.pipeline.memory.TrapHandler_exceptionSignals_trapVal[31:0]
+@28
+[color] 2
+TOP.Core.pipeline.memory.TrapHandler_interruptSignals_hasTrapped
+@22
+[color] 2
+TOP.Core.pipeline.memory.TrapHandler_interruptSignals_trapCause[3:0]
+[color] 2
+TOP.Core.pipeline.memory.TrapHandler_interruptSignals_trapVal[31:0]
+@28
+[color] 2
+TOP.Core.pipeline.memory.TrapHandler_isInterrupt
+@22
+TOP.Core.pipeline.memory.out_CEXC_CAP_IDX_idx[5:0]
+TOP.Core.pipeline.memory.out_CEXC_CAUSE[4:0]
+@200
+-instruction decrypt
+@28
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.io_tag_error
+TOP.Core.pipeline.InstructionCacheEncrypt.aesCache_dec_tag_error
+TOP.Core.pipeline.InstructionCacheEncrypt.CInvokeCache_decrypt_error
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl_CInvokeCache_decrypt_error
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl_keyGenWrapper_decrypt_error
+TOP.Core.pipeline.AESCntrlSelector.AESTopWrapper_io_data_AES_DEC_tag_error
+@29
+TOP.Core.pipeline.AESCntrlSelector.AESTopWrapper_io_instr_AES_DEC_tag_error
+@28
+TOP.Core.pipeline.AESCntrlSelector.DataCacheEncrypt_io_DCacheAES_DEC_tag_error
+TOP.Core.pipeline.AESCntrlSelector.InstructionCacheEncrypt_io_tag_error
+@200
+-key generator
+@28
+TOP.Core.pipeline.memory.KeyGenWrapper2_io_KeyCSeal_table_error
+TOP.Core.pipeline.memory.KeyGenWrapper2_io_KeyCSeal_table_error
+@22
+TOP.Core.pipeline.KeyGenWrapper2.io_KeyCSeal_cmd_payload_otype[11:0]
+@28
+[color] 6
+TOP.Core.pipeline.KeyGenWrapper2.io_CacheUpdateIV_decrypt_error
+[color] 6
+TOP.Core.pipeline.KeyGenWrapper2.io_CacheUpdateIV_table_error
+[color] 6
+TOP.Core.pipeline.KeyGenWrapper2.io_KeyCInvoke_decrypt_error
+[color] 6
+TOP.Core.pipeline.KeyGenWrapper2.io_KeyCInvoke_table_error
+[color] 6
+TOP.Core.pipeline.KeyGenWrapper2.io_KeyCSeal_encrypt_error
+[color] 6
+TOP.Core.pipeline.KeyGenWrapper2.io_KeyCSeal_table_error
+[color] 6
+TOP.Core.pipeline.KeyGenWrapper2.tableKeyGenTop_1_io_decrypt_error
+[color] 6
+TOP.Core.pipeline.KeyGenWrapper2.tableKeyGenTop_1_io_error
+TOP.Core.pipeline.KeyGenWrapper2.tableKeyGenTop_1.table_1.decrypt_errorReg
+TOP.Core.pipeline.KeyGenWrapper2.tableKeyGenTop_1.table_1.tableio_decrypt_error
+TOP.Core.pipeline.KeyGenWrapper2.tableKeyGenTop_1.table_1.tableio_error
+@22
+TOP.Core.pipeline.KeyGenWrapper2.tableKeyGenTop_1.table_1.entry_0_NextIVCount[63:0]
+TOP.Core.pipeline.KeyGenWrapper2.tableKeyGenTop_1.table_1.entry_0_key[127:0]
+TOP.Core.pipeline.KeyGenWrapper2.tableKeyGenTop_1.table_1.entry_0_otype[11:0]
+@28
+TOP.Core.pipeline.KeyGenWrapper2.tableKeyGenTop_1.table_1.entry_0_used
+TOP.Core.pipeline.KeyGenWrapper2.tableKeyGenTop_1.table_1.entry_0_usedCounter[1:0]
+@200
+-execute
+@22
+TOP.Core.pipeline.RegisterFileAccessor.x0_zero[31:0]
+TOP.Core.pipeline.RegisterFileAccessor.x1_ra[31:0]
+TOP.Core.pipeline.RegisterFileAccessor.x2_sp[31:0]
+TOP.Core.pipeline.RegisterFileAccessor.x3_gp[31:0]
+TOP.Core.pipeline.RegisterFileAccessor.x4_tp[31:0]
+TOP.Core.pipeline.RegisterFileAccessor.x5_t0[31:0]
+TOP.Core.pipeline.RegisterFileAccessor.x6_t1[31:0]
+TOP.Core.pipeline.RegisterFileAccessor.x7_t2[31:0]
+[color] 1
+TOP.Core.pipeline.execute.in_PC[31:0]
+TOP.Core.pipeline.RegisterFile_1.c1_base[31:0]
+TOP.Core.pipeline.RegisterFile_1.c1_length[31:0]
+TOP.Core.pipeline.RegisterFile_1.c1_offset[31:0]
+TOP.Core.pipeline.RegisterFile_1.c1_otype_value[11:0]
+TOP.Core.pipeline.RegisterFile_1.c1_padding[9:0]
+@28
+TOP.Core.pipeline.RegisterFile_1.c1_perms_accessSystemRegisters
+TOP.Core.pipeline.RegisterFile_1.c1_perms_cinvoke
+TOP.Core.pipeline.RegisterFile_1.c1_perms_execute
+TOP.Core.pipeline.RegisterFile_1.c1_perms_load
+TOP.Core.pipeline.RegisterFile_1.c1_perms_loadCapability
+TOP.Core.pipeline.RegisterFile_1.c1_perms_noEncrypt
+TOP.Core.pipeline.RegisterFile_1.c1_perms_seal
+TOP.Core.pipeline.RegisterFile_1.c1_perms_store
+TOP.Core.pipeline.RegisterFile_1.c1_perms_storeCapability
+TOP.Core.pipeline.RegisterFile_1.c1_perms_unseal
+TOP.Core.pipeline.RegisterFile_1.c1_tag
+[color] 1
+TOP.Core.pipeline.execute.in_CINVOKE_ENCRYPT
+TOP.Core.pipeline.memory_arbitration_jumpRequested
+TOP.Core.pipeline.memory_arbitration_isReady
+[color] 1
+TOP.Core.pipeline.execute.in_CJALR
+@820
+TOP.Core.pipeline.memory.CSealEncrypt_CSealEncryptFsm_stateReg_string[87:0]
+@28
+TOP.Core.pipeline.memory.CSealEReadWrite_io_rsp_payload_done
+TOP.Core.pipeline.memory.CSealEReadWrite_io_rsp_valid
+@22
+TOP.Core.pipeline.memory.CSealEncrypt_tagAddrReg[31:0]
+TOP.Core.pipeline.memory.CSealEncrypt_dataAddrReg[31:0]
+@200
+-CSealEncrypt
+@28
+[color] 1
+TOP.Core.pipeline.memory.in_CSEAL_ENCRYPT
+[color] 2
+TOP.Core.pipeline.CSealEReadWrite.CSealInstr_cmd_payload_start
+[color] 2
+TOP.Core.pipeline.CSealEReadWrite.CSealInstr_cmd_valid
+@820
+TOP.Core.pipeline.memory.CSealEncrypt_CSealEncryptFsm_stateReg_string[87:0]
+TOP.Core.pipeline.KeyGenWrapper2.tableKeyGenTop_1.table_1.tableFsm_stateReg_string[135:0]
+@22
+TOP.Core.pipeline.AESCntrlSelector.CSealEReadWrite_io_CSealAES_cmd_payload_key[127:0]
+@200
+-CSealReadWrite inputs
+@22
+TOP.Core.pipeline.CSealEReadWrite.CSealInstr_cmd_payload_IV[127:0]
+TOP.Core.pipeline.CSealEReadWrite.CSealInstr_cmd_payload_authTagAddress[31:0]
+TOP.Core.pipeline.CSealEReadWrite.CSealInstr_cmd_payload_dataAddress[31:0]
+TOP.Core.pipeline.CSealEReadWrite.CSealInstr_cmd_payload_key[127:0]
+TOP.Core.pipeline.CSealEReadWrite.CSealInstr_cmd_payload_length[31:0]
+@28
+TOP.Core.pipeline.CSealEReadWrite.CSealInstr_cmd_payload_start
+TOP.Core.pipeline.CSealEReadWrite.CSealInstr_cmd_valid
+TOP.Core.pipeline.CSealEReadWrite.CSealInstr_encrypt_error
+TOP.Core.pipeline.CSealEReadWrite.CSealInstr_rsp_payload_done
+TOP.Core.pipeline.CSealEReadWrite.CSealInstr_rsp_valid
+@22
+TOP.Core.pipeline.CSealEReadWrite.outputFifo.io_pop_payload_Out_data[127:0]
+@200
+-CsealReadWrite state machine
+@820
+TOP.Core.pipeline.CSealEReadWrite.readWritefsm_stateReg_string[71:0]
+@200
+-dbusAXI
+@22
+[color] 2
+TOP.Core.pipeline.CSealEReadWrite.dbusCSealAXI_cmd_payload_wdata[31:0]
+@28
+TOP.Core.pipeline.CSealEReadWrite.clk
+@22
+[color] 2
+TOP.Core.pipeline.CSealEReadWrite.dbusCSealAXI_cmd_payload_wmask[3:0]
+@28
+[color] 2
+TOP.Core.pipeline.CSealEReadWrite.dbusCSealAXI_cmd_payload_write
+[color] 2
+TOP.Core.pipeline.CSealEReadWrite.dbusCSealAXI_cmd_ready
+@22
+[color] 2
+TOP.Core.pipeline.CSealEReadWrite.dbusCSealAXI_cmd_payload_address[31:0]
+@28
+[color] 2
+TOP.Core.pipeline.CSealEReadWrite.dbusCSealAXI_cmd_valid
+[color] 2
+TOP.Core.pipeline.CSealEReadWrite.dbusCSealAXI_rsp_ready
+[color] 2
+TOP.Core.pipeline.CSealEReadWrite.dbusCSealAXI_rsp_valid
+@22
+[color] 2
+TOP.Core.pipeline.CSealEReadWrite.dbusCSealAXI_rsp_payload_rdata[31:0]
+@28
+TOP.Core.pipeline.CSealEReadWrite.dbusAXI_CSealSelect
+TOP.Core.pipeline.CSealEReadWrite.aesCSeal_CSealSelect
+@200
+-read data
+@22
+TOP.Core.pipeline.CSealEReadWrite.endReadLength[31:0]
+@28
+TOP.Core.pipeline.CSealEReadWrite.readDone
+@22
+TOP.Core.pipeline.CSealEReadWrite.currentReadAddress[31:0]
+@200
+-read MUX
+@820
+TOP.Core.pipeline.CSealEReadWrite.readMuxfsm_stateReg_string[55:0]
+@28
+TOP.Core.pipeline.CSealEReadWrite.currentReadBlock[1:0]
+@22
+TOP.Core.pipeline.CSealEReadWrite.muxReadReg[127:0]
+@28
+TOP.Core.pipeline.CSealEReadWrite.muxReadRegValid
+@22
+TOP.Core.pipeline.CSealEReadWrite.endReadLength2[31:0]
+@28
+TOP.Core.pipeline.CSealEReadWrite.lastRegValid
+@200
+-write mux
+@820
+TOP.Core.pipeline.CSealEReadWrite.readWritefsm_stateReg_string[71:0]
+@22
+TOP.Core.pipeline.CSealEReadWrite.outputFifo.io_pop_payload_Out_data[127:0]
+@28
+TOP.Core.pipeline.CSealEReadWrite.outputFifo.io_pop_payload_data_vld
+TOP.Core.pipeline.CSealEReadWrite.outputFifo.io_pop_payload_tag_vld
+TOP.Core.pipeline.CSealEReadWrite.outputFifo.io_pop_ready
+TOP.Core.pipeline.CSealEReadWrite.outputFifo.io_pop_valid
+@22
+[color] 1
+TOP.Core.pipeline.CSealEReadWrite.dbusCSealAXI_cmd_payload_address[31:0]
+[color] 1
+TOP.Core.pipeline.CSealEReadWrite.dbusCSealAXI_cmd_payload_wdata[31:0]
+@28
+[color] 1
+TOP.Core.pipeline.CSealEReadWrite.stopReading
+[color] 1
+TOP.Core.pipeline.CSealEReadWrite.dbusCSealAXI_cmd_payload_write
+TOP.Core.pipeline.CSealEReadWrite.readStopped
+[color] 1
+TOP.Core.pipeline.CSealEReadWrite.dbusCSealAXI_cmd_ready
+[color] 1
+TOP.Core.pipeline.CSealEReadWrite.dbusCSealAXI_cmd_valid
+@22
+[color] 2
+TOP.Core.pipeline.CSealEReadWrite.dbusCSealAXI_rsp_payload_rdata[31:0]
+@28
+[color] 2
+TOP.Core.pipeline.CSealEReadWrite.dbusCSealAXI_rsp_ready
+[color] 2
+TOP.Core.pipeline.CSealEReadWrite.dbusCSealAXI_rsp_valid
+@22
+TOP.Core.pipeline.CSealEReadWrite.currentWriteLength[31:0]
+[color] 2
+TOP.Core.pipeline.CSealEReadWrite.currentWriteAddress[31:0]
+@28
+[color] 2
+TOP.Core.pipeline.CSealEReadWrite.counterBlock[1:0]
+TOP.Core.pipeline.CSealEReadWrite.currentWriteBlock[1:0]
+[color] 2
+TOP.Core.pipeline.CSealEReadWrite.wdataValid
+@22
+[color] 2
+TOP.Core.pipeline.CSealEReadWrite.wdata[31:0]
+@28
+TOP.Core.pipeline.CSealEReadWrite.dbusCSealAXI_cmd_ready
+TOP.Core.pipeline.CSealEReadWrite.streamWriteOutput_valid
+TOP.Core.pipeline.CSealEReadWrite.streamWriteOutput_payload_tag_vld
+@22
+TOP.Core.pipeline.CSealEReadWrite.streamWriteOutput_payload_Out_data[127:0]
+@28
+TOP.Core.pipeline.CSealEReadWrite.streamWriteOutput_payload_data_vld
+TOP.Core.pipeline.CSealEReadWrite.streamWriteOutput_ready
+@22
+[color] 1
+TOP.Core.pipeline.CSealEReadWrite.dbusCSealAXI_cmd_payload_wdata[31:0]
+[color] 1
+TOP.Core.pipeline.CSealEReadWrite.dbusCSealAXI_cmd_payload_wmask[3:0]
+@28
+[color] 1
+TOP.Core.pipeline.CSealEReadWrite.dbusCSealAXI_cmd_payload_write
+[color] 1
+TOP.Core.pipeline.CSealEReadWrite.dbusCSealAXI_cmd_ready
+[color] 1
+TOP.Core.pipeline.CSealEReadWrite.dbusCSealAXI_cmd_valid
+TOP.Core.pipeline.CSealEReadWrite.outputFifo.io_pop_payload_data_vld
+TOP.Core.pipeline.CSealEReadWrite.outputFifo.io_pop_payload_tag_vld
+TOP.Core.pipeline.CSealEReadWrite.outputFifo.io_pop_ready
+TOP.Core.pipeline.CSealEReadWrite.outputFifo.io_pop_valid
+@22
+TOP.Core.pipeline.AESCntrlSelector.CSealEReadWrite_io_CSealAES_cmd_payload_block[127:0]
+@28
+TOP.Core.pipeline.AESCntrlSelector.CSealEReadWrite_io_CSealAES_cmd_payload_vector_vld
+[color] 2
+TOP.Core.pipeline.AESCntrlSelector.CSealEReadWrite_io_CSealAES_cmd_payload_pt_vld
+TOP.Core.pipeline.AESCntrlSelector.CSealEReadWrite_io_CSealAES_cmd_payload_last_word
+TOP.Core.pipeline.AESCntrlSelector.CSealEReadWrite_io_CSealAES_cmd_valid
+@22
+TOP.Core.pipeline.AESCntrlSelector.CSealEReadWrite_io_CSealAES_rsp_payload_Out_data[127:0]
+@28
+TOP.Core.pipeline.AESCntrlSelector.CSealEReadWrite_io_CSealAES_rsp_payload_data_vld
+TOP.Core.pipeline.AESCntrlSelector.CSealEReadWrite_io_CSealAES_rsp_payload_tag_vld
+@200
+-KeyGenerator
+@820
+TOP.Core.pipeline.KeyGenWrapper2.tableKeyGenTop_1.keyGenerator.sm_stateReg_string[119:0]
+@28
+TOP.Core.pipeline.KeyGenWrapper2.tableKeyGenTop_1.io_cmd_payload_genKey
+TOP.Core.pipeline.KeyGenWrapper2.io_KeyCSeal_cmd_payload_storeNextIVCount
+TOP.Core.pipeline.KeyGenWrapper2.tableKeyGenTop_1.io_cmd_payload_getKey
+TOP.Core.pipeline.KeyGenWrapper2.io_CacheUpdateIV_cmd_payload_storeNextIVCount
+@200
+-CInvokeEncrypt
+@28
+[color] 1
+TOP.Core.pipeline.memory.in_CINVOKE_ENCRYPT
+@820
+TOP.Core.pipeline.memory.CInvokeEncrypt_CInvokeEncryptFsm_stateReg_string[87:0]
+@28
+TOP.Core.pipeline.memory.DataCacheEncrypt_io_decrypt_error
+TOP.Core.pipeline.memory.InstructionCacheEncrypt_io_decrypt_error
+@200
+-InstructionCache
+@28
+[color] 5
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.otherCache_thisCacheNotFinished
+[color] 5
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.otherCache_otherCacheNotFinished
+@200
+-readcacheline
+@820
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.readMemFsm_stateReg_string[103:0]
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.writeCacheFsm_stateReg_string[143:0]
+@22
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.TagReg[127:0]
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.tagAddrReg[31:0]
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.tagAddr[31:0]
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.tagL[31:0]
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.controllerio_cmd_payload_IV[127:0]
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.controllerio_cmd_payload_batchAddr[31:0]
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.controllerio_cmd_payload_capBaseAddr[31:0]
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.controllerio_cmd_payload_capLen[31:0]
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.controllerio_cmd_payload_key[127:0]
+@28
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.controllerio_cmd_valid
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.controllerio_rsp_payload_done
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.controllerio_rsp_valid
+@200
+-AXI
+@22
+[color] 2
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl_dbusCacheAXI_cmd_payload_address[31:0]
+[color] 2
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl_dbusCacheAXI_cmd_payload_wdata[31:0]
+[color] 2
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl_dbusCacheAXI_cmd_payload_wmask[3:0]
+@28
+[color] 2
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl_dbusCacheAXI_cmd_payload_write
+[color] 2
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl_dbusCacheAXI_cmd_valid
+[color] 2
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl_dbusCacheAXI_rsp_ready
+@22
+[color] 2
+TOP.Core.pipeline.InstructionCacheEncrypt.ibusCacheAXI_cmd_payload_address[31:0]
+@28
+[color] 2
+TOP.Core.pipeline.InstructionCacheEncrypt.ibusCacheAXI_cmd_ready
+[color] 2
+TOP.Core.pipeline.InstructionCacheEncrypt.ibusCacheAXI_cmd_valid
+@820
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.readMemFsm_stateReg_string[103:0]
+@28
+[color] 3
+TOP.Core.pipeline.InstructionCacheEncrypt.ibusCacheAXI_rsp_ready
+@22
+[color] 3
+TOP.Core.pipeline.InstructionCacheEncrypt.ibusCacheAXI_rsp_payload_rdata[31:0]
+@28
+[color] 3
+TOP.Core.pipeline.InstructionCacheEncrypt.ibusCacheAXI_rsp_valid
+[color] 2
+TOP.Core.pipeline.InstructionCacheEncrypt.ibusCache_axiRspValid
+@200
+-AES decrypt FIFO
+@28
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.muxReadRegValid
+@22
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.muxReadReg[127:0]
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.inputFifo.io_push_payload_block[127:0]
+@28
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.inputFifo.io_push_payload_ct_vld
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.inputFifo.io_push_payload_key_vld
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.inputFifo.io_push_payload_vector_vld
+[color] 1
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.inputFifo.io_push_ready
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.inputFifo.io_push_valid
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.inputFifo.io_push_payload_last_word
+@22
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.inputFifo.io_pop_payload_block[127:0]
+@28
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.inputFifo.io_pop_payload_ct_vld
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.inputFifo.io_pop_payload_key_vld
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.inputFifo.io_pop_payload_last_word
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.inputFifo.io_pop_payload_vector_vld
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.inputFifo.io_pop_ready
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.inputFifo.io_pop_valid
+@200
+-AES decrypt
+@28
+[color] 6
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.io_cmd_payload_aad_vld
+@22
+[color] 6
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.io_cmd_payload_block[127:0]
+@28
+[color] 6
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.io_cmd_payload_ct_vld
+@22
+[color] 6
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.io_cmd_payload_key[127:0]
+@28
+[color] 6
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.io_cmd_payload_key_vld
+[color] 6
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.io_cmd_payload_last_word
+@22
+[color] 6
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.io_cmd_payload_tag_gold[127:0]
+@28
+[color] 6
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.io_cmd_payload_vector_vld
+[color] 6
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.io_cmd_ready
+[color] 6
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.io_cmd_valid
+@22
+[color] 6
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.io_data_size[3:0]
+[color] 6
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.io_rsp_payload_Out_data[127:0]
+@28
+[color] 6
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.io_rsp_payload_data_vld
+[color] 6
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.io_rsp_payload_tag_vld
+[color] 6
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.io_rsp_valid
+[color] 6
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.io_tag_error
+@200
+-DataCache
+@22
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.controllerio_cmd_payload_IV[127:0]
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.controllerio_cmd_payload_capBaseAddr[31:0]
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.controllerio_cmd_payload_batchAddr[31:0]
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.controllerio_cmd_payload_capLen[31:0]
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.controllerio_cmd_payload_key[127:0]
+@28
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.controllerio_cmd_valid
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.controllerio_rsp_payload_done
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.controllerio_rsp_valid
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.clk
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.io_cmd_valid
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.io_cmd_payload_vector_vld
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.io_cmd_payload_aad_vld
+@22
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.io_cmd_payload_block[127:0]
+@28
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.io_cmd_payload_ct_vld
+@22
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.io_cmd_payload_key[127:0]
+@28
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.io_cmd_payload_key_vld
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.io_cmd_payload_last_word
+@22
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.io_cmd_payload_tag_gold[127:0]
+@28
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.io_cmd_ready
+@22
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.io_data_size[3:0]
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.io_rsp_payload_Out_data[127:0]
+@28
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.io_rsp_payload_data_vld
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.io_rsp_payload_tag_vld
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.io_rsp_valid
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.io_tag_error
+[color] 5
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.otherCache_thisCacheNotFinished
+@200
+-readCacheline
+@820
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.readBatch.readMemFsm_stateReg_string[103:0]
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.readBatch.writeCacheFsm_stateReg_string[143:0]
+@22
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.readBatch.TagReg[127:0]
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.readBatch.tagAddrReg[31:0]
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.readBatch.controllerio_cmd_payload_capBaseAddr[31:0]
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.readBatch.controllerio_cmd_payload_capLen[31:0]
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.readBatch.controllerio_cmd_payload_batchAddr[31:0]
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.readBatch.tagL[31:0]
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.readBatch.tagAddr[31:0]
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.readBatch.intAddrShiftTag[31:0]
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.readBatch.intAddrShift[31:0]
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.readBatch.intAddr[31:0]
+@200
+-dcache
+@28
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.icache.linebitsReg[1:0]
+@22
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.icache.io_cmd_payload_address[31:0]
+@28
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.icache.io_cmd_payload_procwrite
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.icache.io_cmd_payload_inputFromMem
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.icache.io_cmd_payload_inputFromMem_regNext
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.icache.io_cmd_payload_memwrite
+@22
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.icache.io_cmd_payload_wdata[31:0]
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.icache.io_cmd_payload_wmask[3:0]
+@28
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.icache.io_cmd_valid_regNext
+@22
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.icache.io_rsp_payload_curentWdata[31:0]
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.icache.io_rsp_payload_currentAddr[31:0]
+@28
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.icache.io_rsp_payload_currentProcwrite
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.icache.io_cmd_valid
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.icache.io_rsp_valid
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.icache.io_rsp_payload_currentInputFromMem
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.icache.io_rsp_payload_currentMemwrite
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.icache.io_rsp_payload_hit
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.icache.io_rsp_payload_memread
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.icache.io_rsp_payload_outputForMem
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.icache.io_rsp_payload_procread
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.icache.io_rsp_payload_rProcWriteHit
+@22
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.icache.io_rsp_payload_rdata[31:0]
+@28
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.icache.io_rsp_payload_rdirty
+@22
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.icache.io_rsp_payload_readLineAddr[31:0]
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.icache.io_rsp_payload_writebackLineAddr[31:0]
+@200
+-writecacheline
+@820
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.writeBatch.readCacheFsm_stateReg_string[111:0]
+@28
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_d.io_cmd_payload_aad_vld
+TOP.Core.pipeline.DataCacheEncrypt.clk
+@22
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_d.io_cmd_payload_block[127:0]
+@28
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_d.io_cmd_payload_ct_vld
+@22
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_d.io_cmd_payload_key[127:0]
+@28
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_d.io_cmd_payload_key_vld
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_d.io_cmd_payload_last_word
+@22
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_d.io_cmd_payload_tag_gold[127:0]
+@28
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_d.io_cmd_payload_vector_vld
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_d.io_cmd_ready
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_d.io_cmd_valid
+@22
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_d.io_data_size[3:0]
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_d.io_rsp_payload_Out_data[127:0]
+@28
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_d.io_rsp_payload_data_vld
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_d.io_rsp_payload_tag_vld
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_d.io_rsp_valid
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_d.io_tag_error
+TOP.clk
+@200
+-execute
+@22
+[color] 1
+TOP.Core.pipeline.execute.in_PC[31:0]
+@28
+[color] 2
+TOP.Core.pipeline.execute.in_CSEAL_ENCRYPT
+[color] 1
+TOP.Core.pipeline.execute.in_CINVOKE_ENCRYPT
+TOP.Core.pipeline.memory_arbitration_jumpRequested
+TOP.Core.pipeline.memory_arbitration_isReady
+[color] 1
+TOP.Core.pipeline.execute.in_CJALR
+@820
+TOP.Core.pipeline.memory.CSealEncrypt_CSealEncryptFsm_stateReg_string[87:0]
+@28
+TOP.Core.pipeline.memory.CSealEReadWrite_io_rsp_payload_done
+TOP.Core.pipeline.memory.CSealEReadWrite_io_rsp_valid
+@22
+TOP.Core.pipeline.memory.CSealEncrypt_tagAddrReg[31:0]
+TOP.Core.pipeline.memory.CSealEncrypt_dataAddrReg[31:0]
+@200
+-CSealEncrypt
+@28
+[color] 1
+TOP.Core.pipeline.memory.in_CSEAL_ENCRYPT
+[color] 2
+TOP.Core.pipeline.CSealEReadWrite.CSealInstr_cmd_payload_start
+[color] 2
+TOP.Core.pipeline.CSealEReadWrite.CSealInstr_cmd_valid
+@820
+TOP.Core.pipeline.memory.CSealEncrypt_CSealEncryptFsm_stateReg_string[87:0]
+TOP.Core.pipeline.KeyGenWrapper2.tableKeyGenTop_1.table_1.tableFsm_stateReg_string[135:0]
+@22
+TOP.Core.pipeline.AESCntrlSelector.CSealEReadWrite_io_CSealAES_cmd_payload_key[127:0]
+TOP.Core.pipeline.CSealEReadWrite.outputFifo.io_pop_payload_Out_data[127:0]
+@28
+TOP.Core.pipeline.CSealEReadWrite.aesCSeal_CSealSelect
+TOP.Core.pipeline.CSealEReadWrite.currentWriteBlock[1:0]
+@22
+TOP.Core.pipeline.CSealEReadWrite.currentWriteLength[31:0]
+@28
+TOP.Core.pipeline.CSealEReadWrite.dbusAXI_CSealSelect
+@22
+[color] 1
+TOP.Core.pipeline.CSealEReadWrite.dbusCSealAXI_cmd_payload_address[31:0]
+[color] 2
+TOP.Core.pipeline.CSealEReadWrite.currentWriteAddress[31:0]
+@28
+[color] 2
+TOP.Core.pipeline.CSealEReadWrite.counterBlock[1:0]
+[color] 2
+TOP.Core.pipeline.CSealEReadWrite.wdataValid
+@22
+[color] 2
+TOP.Core.pipeline.CSealEReadWrite.wdata[31:0]
+@28
+TOP.clk
+TOP.Core.pipeline.CSealEReadWrite.dbusCSealAXI_cmd_ready
+TOP.Core.pipeline.CSealEReadWrite.streamWriteOutput_valid
+TOP.Core.pipeline.CSealEReadWrite.streamWriteOutput_payload_tag_vld
+[color] 3
+TOP.Core.pipeline.CSealEReadWrite.wdataValid
+@22
+[color] 3
+TOP.Core.pipeline.CSealEReadWrite.wdata[31:0]
+@28
+[color] 3
+TOP.Core.pipeline.CSealEReadWrite.readWritefsm_aesRsp_done
+[color] 3
+TOP.Core.pipeline.CSealEReadWrite.CSealInstr_rsp_payload_done
+[color] 3
+TOP.Core.pipeline.CSealEReadWrite.writeDone
+@22
+TOP.Core.pipeline.CSealEReadWrite.streamWriteOutput_payload_Out_data[127:0]
+@28
+TOP.Core.pipeline.CSealEReadWrite.streamWriteOutput_payload_data_vld
+TOP.Core.pipeline.CSealEReadWrite.streamWriteOutput_ready
+@22
+[color] 1
+TOP.Core.pipeline.CSealEReadWrite.dbusCSealAXI_cmd_payload_wmask[3:0]
+TOP.Core.pipeline.CSealEReadWrite.dbusCSealAXI_cmd_payload_address[31:0]
+[color] 1
+TOP.Core.pipeline.CSealEReadWrite.dbusCSealAXI_cmd_payload_wdata[31:0]
+@28
+[color] 1
+TOP.Core.pipeline.CSealEReadWrite.dbusCSealAXI_cmd_payload_write
+[color] 1
+TOP.Core.pipeline.CSealEReadWrite.dbusCSealAXI_cmd_ready
+[color] 1
+TOP.Core.pipeline.CSealEReadWrite.dbusCSealAXI_cmd_valid
+@200
+-dbusSelector
+@820
+TOP.Core.pipeline.CSealEReadWrite.readWritefsm_stateReg_string[71:0]
+@22
+TOP.Core.pipeline.CSealEReadWrite.wdata[31:0]
+TOP.Core.pipeline.CSealEReadWrite.currentWriteAddress[31:0]
+@28
+TOP.Core.pipeline.CSealEReadWrite.wdataValid
+@22
+[color] 6
+TOP.Core.pipeline.MemoryEncrypt2.dbusSelector.dbusAXI_cmd_payload_address[31:0]
+[color] 6
+TOP.Core.pipeline.MemoryEncrypt2.dbusSelector.dbusAXI_cmd_payload_wdata[31:0]
+[color] 6
+TOP.Core.pipeline.MemoryEncrypt2.dbusSelector.dbusAXI_cmd_payload_wmask[3:0]
+@28
+[color] 6
+TOP.Core.pipeline.MemoryEncrypt2.dbusSelector.dbusAXI_cmd_payload_write
+[color] 6
+TOP.Core.pipeline.MemoryEncrypt2.dbusSelector.dbusAXI_cmd_ready
+[color] 6
+TOP.Core.pipeline.MemoryEncrypt2.dbusSelector.dbusAXI_cmd_valid
+@22
+[color] 6
+TOP.Core.pipeline.MemoryEncrypt2.dbusSelector.dbusAXI_rsp_payload_rdata[31:0]
+@28
+[color] 6
+TOP.Core.pipeline.MemoryEncrypt2.dbusSelector.dbusAXI_rsp_ready
+[color] 6
+TOP.Core.pipeline.MemoryEncrypt2.dbusSelector.dbusAXI_rsp_valid
+TOP.Core.pipeline.CSealEReadWrite.outputFifo.io_pop_payload_data_vld
+TOP.Core.pipeline.CSealEReadWrite.outputFifo.io_pop_payload_tag_vld
+TOP.Core.pipeline.CSealEReadWrite.outputFifo.io_pop_ready
+TOP.Core.pipeline.CSealEReadWrite.outputFifo.io_pop_valid
+@22
+TOP.Core.pipeline.AESCntrlSelector.CSealEReadWrite_io_CSealAES_cmd_payload_block[127:0]
+@28
+TOP.Core.pipeline.AESCntrlSelector.CSealEReadWrite_io_CSealAES_cmd_payload_vector_vld
+[color] 2
+TOP.Core.pipeline.AESCntrlSelector.CSealEReadWrite_io_CSealAES_cmd_payload_pt_vld
+TOP.Core.pipeline.AESCntrlSelector.CSealEReadWrite_io_CSealAES_cmd_payload_last_word
+TOP.Core.pipeline.AESCntrlSelector.CSealEReadWrite_io_CSealAES_cmd_valid
+@22
+TOP.Core.pipeline.AESCntrlSelector.CSealEReadWrite_io_CSealAES_rsp_payload_Out_data[127:0]
+@28
+TOP.Core.pipeline.AESCntrlSelector.CSealEReadWrite_io_CSealAES_rsp_payload_data_vld
+TOP.Core.pipeline.AESCntrlSelector.CSealEReadWrite_io_CSealAES_rsp_payload_tag_vld
+@200
+-KeyGenerator
+@820
+TOP.Core.pipeline.KeyGenWrapper2.tableKeyGenTop_1.keyGenerator.sm_stateReg_string[119:0]
+@28
+TOP.Core.pipeline.KeyGenWrapper2.tableKeyGenTop_1.io_cmd_payload_genKey
+TOP.Core.pipeline.KeyGenWrapper2.io_KeyCSeal_cmd_payload_storeNextIVCount
+TOP.Core.pipeline.KeyGenWrapper2.tableKeyGenTop_1.io_cmd_payload_getKey
+TOP.Core.pipeline.KeyGenWrapper2.io_CacheUpdateIV_cmd_payload_storeNextIVCount
+@200
+-CInvokeEncrypt
+@28
+[color] 1
+TOP.Core.pipeline.memory.in_CINVOKE_ENCRYPT
+@820
+TOP.Core.pipeline.memory.CInvokeEncrypt_CInvokeEncryptFsm_stateReg_string[87:0]
+@28
+TOP.Core.pipeline.memory.DataCacheEncrypt_io_decrypt_error
+TOP.Core.pipeline.memory.InstructionCacheEncrypt_io_decrypt_error
+@200
+-InstructionCache
+@28
+[color] 5
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.otherCache_thisCacheNotFinished
+[color] 5
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.otherCache_otherCacheNotFinished
+@200
+-readcacheline
+@820
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.readMemFsm_stateReg_string[103:0]
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.writeCacheFsm_stateReg_string[143:0]
+@22
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.TagReg[127:0]
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.tagAddrReg[31:0]
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.tagAddr[31:0]
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.tagL[31:0]
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.controllerio_cmd_payload_IV[127:0]
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.controllerio_cmd_payload_batchAddr[31:0]
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.controllerio_cmd_payload_capBaseAddr[31:0]
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.controllerio_cmd_payload_capLen[31:0]
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.controllerio_cmd_payload_key[127:0]
+@28
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.controllerio_cmd_valid
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.controllerio_rsp_payload_done
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.controllerio_rsp_valid
+@200
+-DataCache
+@22
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.controllerio_cmd_payload_IV[127:0]
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.controllerio_cmd_payload_capBaseAddr[31:0]
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.controllerio_cmd_payload_batchAddr[31:0]
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.controllerio_cmd_payload_capLen[31:0]
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.controllerio_cmd_payload_key[127:0]
+@28
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.controllerio_cmd_valid
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.controllerio_rsp_payload_done
+TOP.Core.pipeline.InstructionCacheEncrypt.cacheControl.readBatch.controllerio_rsp_valid
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.clk
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.io_cmd_valid
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.io_cmd_payload_vector_vld
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.io_cmd_payload_aad_vld
+@22
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.io_cmd_payload_block[127:0]
+@28
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.io_cmd_payload_ct_vld
+@22
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.io_cmd_payload_key[127:0]
+@28
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.io_cmd_payload_key_vld
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.io_cmd_payload_last_word
+@22
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.io_cmd_payload_tag_gold[127:0]
+@28
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.io_cmd_ready
+@22
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.io_data_size[3:0]
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.io_rsp_payload_Out_data[127:0]
+@28
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.io_rsp_payload_data_vld
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.io_rsp_payload_tag_vld
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.io_rsp_valid
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_i.io_tag_error
+[color] 5
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.otherCache_thisCacheNotFinished
+@200
+-readCacheline
+@820
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.readBatch.readMemFsm_stateReg_string[103:0]
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.readBatch.writeCacheFsm_stateReg_string[143:0]
+@22
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.readBatch.TagReg[127:0]
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.readBatch.tagAddrReg[31:0]
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.readBatch.controllerio_cmd_payload_capBaseAddr[31:0]
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.readBatch.controllerio_cmd_payload_capLen[31:0]
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.readBatch.controllerio_cmd_payload_batchAddr[31:0]
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.readBatch.tagL[31:0]
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.readBatch.tagAddr[31:0]
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.readBatch.intAddrShiftTag[31:0]
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.readBatch.intAddrShift[31:0]
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.readBatch.intAddr[31:0]
+@200
+-dcache
+@28
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.icache.linebitsReg[1:0]
+@22
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.icache.io_cmd_payload_address[31:0]
+@28
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.icache.io_cmd_payload_procwrite
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.icache.io_cmd_payload_inputFromMem
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.icache.io_cmd_payload_inputFromMem_regNext
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.icache.io_cmd_payload_memwrite
+@22
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.icache.io_cmd_payload_wdata[31:0]
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.icache.io_cmd_payload_wmask[3:0]
+@28
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.icache.io_cmd_valid_regNext
+@22
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.icache.io_rsp_payload_curentWdata[31:0]
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.icache.io_rsp_payload_currentAddr[31:0]
+@28
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.icache.io_rsp_payload_currentProcwrite
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.icache.io_cmd_valid
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.icache.io_rsp_valid
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.icache.io_rsp_payload_currentInputFromMem
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.icache.io_rsp_payload_currentMemwrite
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.icache.io_rsp_payload_hit
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.icache.io_rsp_payload_memread
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.icache.io_rsp_payload_outputForMem
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.icache.io_rsp_payload_procread
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.icache.io_rsp_payload_rProcWriteHit
+@22
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.icache.io_rsp_payload_rdata[31:0]
+@28
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.icache.io_rsp_payload_rdirty
+@22
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.icache.io_rsp_payload_readLineAddr[31:0]
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.icache.io_rsp_payload_writebackLineAddr[31:0]
+@200
+-writecacheline
+@820
+TOP.Core.pipeline.DataCacheEncrypt.cacheControl.writeBatch.readCacheFsm_stateReg_string[111:0]
+@28
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_d.io_cmd_payload_aad_vld
+TOP.Core.pipeline.DataCacheEncrypt.clk
+@22
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_d.io_cmd_payload_block[127:0]
+@28
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_d.io_cmd_payload_ct_vld
+@22
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_d.io_cmd_payload_key[127:0]
+@28
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_d.io_cmd_payload_key_vld
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_d.io_cmd_payload_last_word
+@22
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_d.io_cmd_payload_tag_gold[127:0]
+@28
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_d.io_cmd_payload_vector_vld
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_d.io_cmd_ready
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_d.io_cmd_valid
+@22
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_d.io_data_size[3:0]
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_d.io_rsp_payload_Out_data[127:0]
+@28
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_d.io_rsp_payload_data_vld
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_d.io_rsp_payload_tag_vld
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_d.io_rsp_valid
+[color] 1
+TOP.Core.pipeline.AESTopWrapper.AES_DEC_d.io_tag_error
+[pattern_trace] 1
+[pattern_trace] 0
