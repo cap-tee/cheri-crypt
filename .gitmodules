@@ -1,0 +1,4 @@
+[submodule "llvm-cheri"]
+	path = llvm-cheri
+	url = https://github.com/cap-tee/llvm-project.git
+	branch = cheri-crypt-1804
