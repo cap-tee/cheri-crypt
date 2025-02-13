@@ -2,8 +2,11 @@
 
 This repository contains Proteus: a configurable CHERI-based RISC-V core developed from https://github.com/proteus-core/proteus (commit ref 968276b), which has been extended with the CHERI-Crypt plugin.
 
-This is a proof of concept design to encrypt sealed capabilities within a CHERI-based enclaved TEE, as discussed in our TCHES 2025 paper "CHERI-Crypt: Transparent Memory Encryption
- on Capability Architectures".
+This is a proof of concept design to encrypt sealed capabilities within a CHERI-based enclaved TEE, as discussed in our TCHES 2025 paper "CHERI-Crypt: Transparent Memory Encryption on Capability Architectures".
+
+*Our project is funded by the Digital Security by Design (DSbD) Programme delivered by UKRI to support the DSbD ecosystem.*
+
+
 
 ## Setting up and running CHERI-Crypt
 
